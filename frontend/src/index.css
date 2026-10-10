@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-green: #0F3D3E;
+    --primary-green-dark: #0A292A;
+    --primary-green-light: #165355;
+    --accent-gold: #C5A25A;
+    --accent-gold-light: #DFC27D;
+    --accent-gold-dark: #A5833A;
+    --bg-academic: #F8F9FA;
+    --card-bg: #FFFFFF;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-academic);
+    color: #1E293B;
+  }
+
+  h1, h2, h3, .academic-heading {
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Academic Pattern Overlays matching reference screenshots */
+.academic-bg-pattern {
+  background-color: #F8F9FA;
+  background-image: 
+    radial-gradient(#C5A25A 0.75px, transparent 0.75px),
+    radial-gradient(#0F3D3E 0.5px, #F8F9FA 0.5px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Geometric corner decorations from the reference screenshots */
+.corner-accent-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.corner-accent-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* Custom styled scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A25A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0F3D3E;
+}
+
+/* Card glass / elevation styles */
+.academic-card {
+  background: #FFFFFF;
+  border: 1px solid #ECEFF1;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px -2px rgba(15, 61, 62, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+}
+
+.academic-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(15, 61, 62, 0.09), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
+}
+
+.academic-btn-primary {
+  background-color: #0F3D3E;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.academic-btn-primary:hover {
+  background-color: #165355;
+  box-shadow: 0 4px 12px rgba(15, 61, 62, 0.25);
+  transform: translateY(-1px);
+}
+
+.academic-btn-gold {
+  background-color: #C5A25A;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.academic-btn-gold:hover {
+  background-color: #b59247;
+  box-shadow: 0 4px 12px rgba(197, 162, 90, 0.3);
+  transform: translateY(-1px);
+}

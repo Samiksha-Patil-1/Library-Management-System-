@@ -1,0 +1,432 @@
+// Seed data for The Academic Hub
+// Corresponds to the reference UI screenshots
+
+export const initialUsers = [
+  {
+    id: 1,
+    name: 'Sarah Jenkins',
+    email: 'sarah.librarian@academichub.edu',
+    password_hash: '$2a$10$O0I2w645oJ2mU1.B2QYkCOx2b0U4tQ0L7aI0Z/b9kK6q5P0x1y2z3', // password123
+    role: 'librarian',
+    student_id: null,
+    avatar_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 2,
+    name: 'Karie Berlinn',
+    email: 'karie.berlinn@student.academichub.edu',
+    password_hash: '$2a$10$O0I2w645oJ2mU1.B2QYkCOx2b0U4tQ0L7aI0Z/b9kK6q5P0x1y2z3',
+    role: 'student',
+    student_id: '22401',
+    avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 3,
+    name: 'Aaran Habits',
+    email: 'aaran.habits@student.academichub.edu',
+    password_hash: '$2a$10$O0I2w645oJ2mU1.B2QYkCOx2b0U4tQ0L7aI0Z/b9kK6q5P0x1y2z3',
+    role: 'student',
+    student_id: '22402',
+    avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
+  }
+];
+
+export const initialStudents = [
+  {
+    id: 1,
+    student_code: '22401',
+    name: 'Karie Berlinn',
+    email: 'karie.berlinn@student.academichub.edu',
+    phone: '+1 (555) 234-5678',
+    department: 'Literature & Arts',
+    membership_date: '2022-09-01',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 2,
+    student_code: '22402',
+    name: 'Aaran Habits',
+    email: 'aaran.habits@student.academichub.edu',
+    phone: '+1 (555) 345-6789',
+    department: 'Behavioral Psychology',
+    membership_date: '2022-09-15',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 3,
+    student_code: '22403',
+    name: 'Dune Famlinn',
+    email: 'dune.famlinn@student.academichub.edu',
+    phone: '+1 (555) 456-7890',
+    department: 'Science Fiction Studies',
+    membership_date: '2023-01-10',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 4,
+    student_code: '22404',
+    name: 'Sarah Jazed',
+    email: 'sarah.jazed@student.academichub.edu',
+    phone: '+1 (555) 567-8901',
+    department: 'Social Sciences',
+    membership_date: '2022-08-20',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 5,
+    student_code: '22405',
+    name: 'Sarah Sapiens',
+    email: 'sarah.sapiens@student.academichub.edu',
+    phone: '+1 (555) 678-9012',
+    department: 'Anthropology',
+    membership_date: '2023-02-05',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 6,
+    student_code: '22406',
+    name: 'Dune Dune',
+    email: 'dune.dune@student.academichub.edu',
+    phone: '+1 (555) 789-0123',
+    department: 'Cosmology & Physics',
+    membership_date: '2023-03-12',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 7,
+    student_code: '22407',
+    name: 'Aaran Toam',
+    email: 'aaran.toam@student.academichub.edu',
+    phone: '+1 (555) 890-1234',
+    department: 'Modern History',
+    membership_date: '2022-10-18',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 8,
+    student_code: '22408',
+    name: 'Jaran Habits',
+    email: 'jaran.habits@student.academichub.edu',
+    phone: '+1 (555) 901-2345',
+    department: 'Economics & Policy',
+    membership_date: '2023-04-01',
+    status: 'active',
+    avatar_url: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80'
+  }
+];
+
+export const initialBooks = [
+  {
+    id: 1,
+    isbn: '978-1250301696',
+    title: 'The Silent Patient',
+    author: 'Alex Michaelides',
+    genre: 'Fiction',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&auto=format&fit=crop&q=80',
+    rating: 4.8,
+    total_copies: 6,
+    available_copies: 4,
+    shelf_location: 'Floor 2, Shelf F-04',
+    description: 'Alicia Berenson’s life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house in London. One evening, she shoots her husband five times in the face and never speaks another word.',
+    published_year: 2019
+  },
+  {
+    id: 2,
+    isbn: '978-0441172719',
+    title: 'Dune',
+    author: 'Frank Herbert',
+    genre: 'Science',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&auto=format&fit=crop&q=80',
+    rating: 4.9,
+    total_copies: 8,
+    available_copies: 5,
+    shelf_location: 'Floor 3, Shelf S-11',
+    description: 'Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the spice melange.',
+    published_year: 1965
+  },
+  {
+    id: 3,
+    isbn: '978-0062316097',
+    title: 'Sapiens: A Brief History of Humankind',
+    author: 'Yuval Noah Harari',
+    genre: 'History',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&auto=format&fit=crop&q=80',
+    rating: 4.7,
+    total_copies: 10,
+    available_copies: 7,
+    shelf_location: 'Floor 1, Shelf H-02',
+    description: 'From a renowned historian comes a groundbreaking narrative of humanity’s creation and evolution that explores how the cognitive, agricultural, and scientific revolutions have shaped us.',
+    published_year: 2014
+  },
+  {
+    id: 4,
+    isbn: '978-0399590504',
+    title: 'Educated',
+    author: 'Tara Westover',
+    genre: 'Non-Fiction',
+    status: 'Issued',
+    cover_url: 'https://images.unsplash.com/photo-1532012164546-f432f2e3777a?w=400&auto=format&fit=crop&q=80',
+    rating: 4.8,
+    total_copies: 5,
+    available_copies: 0,
+    shelf_location: 'Floor 2, Shelf N-08',
+    description: 'Born to survivalists in the mountains of Idaho, Tara Westover was 17 the first time she set foot in a classroom. Her quest for knowledge transformed her and took her over oceans to Cambridge.',
+    published_year: 2018
+  },
+  {
+    id: 5,
+    isbn: '978-0451524935',
+    title: '1984',
+    author: 'George Orwell',
+    genre: 'Fiction',
+    status: 'Issued',
+    cover_url: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&auto=format&fit=crop&q=80',
+    rating: 4.9,
+    total_copies: 7,
+    available_copies: 1,
+    shelf_location: 'Floor 2, Shelf F-01',
+    description: 'Winston Smith toes the Party line, rewriting history to satisfy the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its own sake.',
+    published_year: 1949
+  },
+  {
+    id: 6,
+    isbn: '978-0735211292',
+    title: 'Atomic Habits',
+    author: 'James Clear',
+    genre: 'Non-Fiction',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&auto=format&fit=crop&q=80',
+    rating: 5.0,
+    total_copies: 12,
+    available_copies: 9,
+    shelf_location: 'Floor 1, Shelf N-02',
+    description: 'No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear reveals practical strategies to form good habits and break bad ones.',
+    published_year: 2018
+  },
+  {
+    id: 7,
+    isbn: '978-0143127741',
+    title: 'Thinking, Fast and Slow',
+    author: 'Daniel Kahneman',
+    genre: 'Science',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&auto=format&fit=crop&q=80',
+    rating: 4.6,
+    total_copies: 6,
+    available_copies: 5,
+    shelf_location: 'Floor 3, Shelf S-05',
+    description: 'Daniel Kahneman takes us on a groundbreaking tour of the mind and explains the two systems that drive the way we think: System 1 is fast and emotional; System 2 is slower and deliberative.',
+    published_year: 2011
+  },
+  {
+    id: 8,
+    isbn: '978-0062457714',
+    title: 'The Subtle Art of Not Giving a F*ck',
+    author: 'Mark Manson',
+    genre: 'Non-Fiction',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400&auto=format&fit=crop&q=80',
+    rating: 4.4,
+    total_copies: 8,
+    available_copies: 6,
+    shelf_location: 'Floor 1, Shelf N-05',
+    description: 'A counterintuitive approach to living a good life, showing how to stop trying to be positive all the time so that we can truly become better, happier people.',
+    published_year: 2016
+  },
+  {
+    id: 9,
+    isbn: '978-0345391803',
+    title: 'The Hitchhiker’s Guide to the Galaxy',
+    author: 'Douglas Adams',
+    genre: 'Fiction',
+    status: 'Issued',
+    cover_url: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&auto=format&fit=crop&q=80',
+    rating: 4.7,
+    total_copies: 4,
+    available_copies: 0,
+    shelf_location: 'Floor 2, Shelf F-09',
+    description: 'Seconds before Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the titular travel guide.',
+    published_year: 1979
+  },
+  {
+    id: 10,
+    isbn: '978-1400033416',
+    title: 'Beloved',
+    author: 'Toni Morrison',
+    genre: 'History',
+    status: 'Available',
+    cover_url: 'https://images.unsplash.com/photo-1495640388908-05fa85288e61?w=400&auto=format&fit=crop&q=80',
+    rating: 4.7,
+    total_copies: 5,
+    available_copies: 3,
+    shelf_location: 'Floor 1, Shelf H-07',
+    description: 'Set in post-Civil War Ohio, it tells the story of Sethe, an escaped slave who has fled to freedom but remains haunted by memories of Sweet Home and the specter of her dead baby girl.',
+    published_year: 1987
+  }
+];
+
+export const initialTransactions = [
+  {
+    id: 1,
+    transaction_code: '1000001',
+    student_id: 4,
+    student_name: 'Sarah Jazed',
+    book_id: 1,
+    book_title: 'The Silent Patient',
+    issue_date: '2024-01-09',
+    return_due_date: '2024-01-18',
+    returned_at: '2024-01-17',
+    status: 'Returned',
+    fine_amount: 0.00,
+    notes: 'Returned on time'
+  },
+  {
+    id: 2,
+    transaction_code: '1000012',
+    student_id: 3,
+    student_name: 'Dune Famlinn',
+    book_id: 2,
+    book_title: 'Dune',
+    issue_date: '2024-01-16',
+    return_due_date: '2024-03-18',
+    returned_at: null,
+    status: 'Issued',
+    fine_amount: 0.00,
+    notes: 'Course research'
+  },
+  {
+    id: 3,
+    transaction_code: '1000013',
+    student_id: 2,
+    student_name: 'Aaran Habits',
+    book_id: 3,
+    book_title: 'Sapiens: A Brief History of Humankind',
+    issue_date: '2024-01-15',
+    return_due_date: '2024-03-18',
+    returned_at: null,
+    status: 'Issued',
+    fine_amount: 0.00,
+    notes: 'Semester assignment'
+  },
+  {
+    id: 4,
+    transaction_code: '1000003',
+    student_id: 5,
+    student_name: 'Sarah Sapiens',
+    book_id: 4,
+    book_title: 'Educated',
+    issue_date: '2024-02-17',
+    return_due_date: '2024-02-17',
+    returned_at: null,
+    status: 'Overdue',
+    fine_amount: 15.00,
+    notes: 'First reminder notice sent'
+  },
+  {
+    id: 5,
+    transaction_code: '1000014',
+    student_id: 6,
+    student_name: 'Dune Dune',
+    book_id: 5,
+    book_title: '1984',
+    issue_date: '2024-01-18',
+    return_due_date: '2024-03-18',
+    returned_at: null,
+    status: 'Overdue',
+    fine_amount: 8.50,
+    notes: 'Overdue notice mailed'
+  },
+  {
+    id: 6,
+    transaction_code: '1000015',
+    student_id: 5,
+    student_name: 'Sarah Sapiens',
+    book_id: 2,
+    book_title: 'Dune',
+    issue_date: '2024-03-19',
+    return_due_date: '2024-03-20',
+    returned_at: null,
+    status: 'Overdue',
+    fine_amount: 12.00,
+    notes: 'Pending return'
+  },
+  {
+    id: 7,
+    transaction_code: '1000016',
+    student_id: 2,
+    student_name: 'Aaran Habits',
+    book_id: 1,
+    book_title: 'The Silent Patient',
+    issue_date: '2024-01-15',
+    return_due_date: '2024-01-28',
+    returned_at: null,
+    status: 'Issued',
+    fine_amount: 0.00,
+    notes: 'Leisure reading'
+  },
+  {
+    id: 8,
+    transaction_code: '1000017',
+    student_id: 7,
+    student_name: 'Aaran Toam',
+    book_id: 3,
+    book_title: 'Sapiens: A Brief History of Humankind',
+    issue_date: '2024-01-12',
+    return_due_date: '2024-01-21',
+    returned_at: null,
+    status: 'Overdue',
+    fine_amount: 22.00,
+    notes: 'Urgent overdue'
+  },
+  {
+    id: 9,
+    transaction_code: '100118',
+    student_id: 8,
+    student_name: 'Jaran Habits',
+    book_id: 6,
+    book_title: 'Atomic Habits',
+    issue_date: '2024-02-04',
+    return_due_date: '2024-02-14',
+    returned_at: '2024-02-14',
+    status: 'Returned',
+    fine_amount: 0.00,
+    notes: 'Returned in pristine condition'
+  },
+  {
+    id: 10,
+    transaction_code: '100119',
+    student_id: 1,
+    student_name: 'Karie Berlinn',
+    book_id: 1,
+    book_title: 'The Silent Patient',
+    issue_date: '2024-03-02',
+    return_due_date: '2024-03-16',
+    returned_at: null,
+    status: 'Recent',
+    fine_amount: 0.00,
+    notes: 'Active check out'
+  }
+];
+
+export const initialStats = {
+  totalBooks: 48512,
+  totalBooksChange: '+12%',
+  issuedBooks: 12105,
+  issuedBooksChange: '+8% active',
+  overdueBooks: 319,
+  overdueBooksChange: '-3%',
+  activeStudents: 8940,
+  activeStudentsChange: '+5% new',
+  returnRate: '98%',
+  returnRateChange: '+98%'
+};
