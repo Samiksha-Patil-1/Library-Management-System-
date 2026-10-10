@@ -64,4 +64,11 @@ const startServer = async () => {
   });
 };
 
-startServer();
+export { app, startServer };
+export default app;
+
+const isDirectRun = process.argv[1] && (process.argv[1].endsWith('server.js') || process.argv[1].endsWith('server'));
+if (isDirectRun || (!process.env.VERCEL && process.env.NODE_ENV !== 'test')) {
+  startServer();
+}
+
